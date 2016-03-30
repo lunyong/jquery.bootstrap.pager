@@ -38,6 +38,10 @@
 在以上选项中，renderTo是必需的，它将决定分页条显示在哪里。url也是必需的，这是请求数据的地址。其它选项都可视情况而定，在没有设定的情况下，这些选项都会有自己的默认值。其中要注意的一点是，如果request参数名或response字段名没有设置，那么一定要确保数据接口的参数名和返回数据的字段名与本插件的默认值保持一致，这些默认值只涉及分页信息数据，与返回数据的其它部分无关。但返回的数据要遵循以下的json格式：{"data":[],"pageIndex":1,"totalRecords":2,"totalPage":1}，其中data是不可变的，其它三个字段可自由设置，但一定要有。
 使用默认样式的完整的分页条如下图所示：
 ![分页条][1]
-  [1]: https://raw.githubusercontent.com/lunyong/jquery.bootstrap.pager/master/image/page1.png
 中间数字按钮样式是Bootstrap提供的，如果想定制自己的样式，直接使用新的css覆盖bootstrap的即可，info部分和go部分可以传入自己的class。
 
+具体效果请看demo：[点击此处查看demo][2]
+
+
+  [1]: https://raw.githubusercontent.com/lunyong/jquery.bootstrap.pager/master/image/page1.png
+  [2]: http://lunyong.github.io/demo/jquery.bootstrap.pager/
